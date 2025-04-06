@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions about Image Compressor Pro - Get answers about our browser-based image compression tool.">
+    <meta name="robots" content="index, follow">
+    <title>FAQs | Image Compressor Pro</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --accent-color: #ea4335;
+            --light-gray: #f5f5f5;
+            --dark-gray: #333;
+            --medium-gray: #757575;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: white;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .faq-header {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+        
+        .faq-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+        }
+        
+        .faq-header p {
+            font-size: 1.2rem;
+            color: var(--medium-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .faq-content {
+            background-color: white;
+            border-radius: 8px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+        
+        .faq-category {
+            padding: 8px 16px;
+            background-color: var(--light-gray);
+            border-radius: 20px;
+            font-size: 14px;
+            color: var(--dark-gray);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .faq-category:hover, .faq-category.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .faq-section {
+            margin-bottom: 40px;
+        }
+        
+        .faq-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background-color: var(--light-gray);
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        
+        .faq-question:hover {
+            background-color: #e9e9e9;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        .contact-prompt {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+        }
+        
+        .contact-prompt h3 {
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #3367d6;
+        }
+        
+        footer {
+            background-color: var(--dark-gray);
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .faq-header h1 {
+                font-size: 2rem;
+            }
+            
+            .faq-content {
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .faq-content {
+                padding: 20px;
+            }
+            
+            .faq-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">Image <span>Compressor</span> Pro</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/How-It-Works.html">How It Works</a></li>
+                    <li><a href="/privacy.html">Privacy</a></li>
+                    <li><a href="/terms.html">T&C</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="faq-header">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about Image Compressor Pro and image optimization in general.</p>
+        </div>
+        
+        <div class="faq-content">
+            <div class="faq-categories">
+                <a href="#general" class="faq-category active">General</a>
+                <a href="#technical" class="faq-category">Technical</a>
+                <a href="#privacy" class="faq-category">Privacy</a>
+                <a href="#usage" class="faq-category">Usage</a>
+            </div>
+            
+            <div class="faq-section" id="general">
+                <h2>General Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What is Image Compressor Pro?</div>
+                    <div class="faq-answer">
+                        <p>Image Compressor Pro is a free online tool that helps you reduce the file size of your images without significantly affecting their visual quality. All processing happens directly in your browser, meaning your images never leave your computer.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is Image Compressor Pro really free?</div>
+                    <div class="faq-answer">
+                        <p>Yes, Image Compressor Pro is completely free to use with no hidden charges. There are no premium features or paywalls - all functionality is available to all users at no cost.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What image formats do you support?</div>
+                    <div class="faq-answer">
+                        <p>We support the most common image formats including JPEG, PNG, and WebP. You can compress these formats or convert between them (except for converting to WebP in some older browsers).</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section" id="technical">
+                <h2>Technical Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How does the compression work?</div>
+                    <div class="faq-answer">
+                        <p>Our tool uses advanced algorithms to analyze and optimize your images. For JPEGs, it adjusts compression levels and removes unnecessary metadata. For PNGs, it uses optimization techniques like color reduction and compression filtering. All processing happens in your browser using JavaScript.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What browsers are supported?</div>
+                    <div class="faq-answer">
+                        <p>Image Compressor Pro works on all modern browsers including Chrome, Firefox, Safari, Edge, and Opera. For best performance, we recommend using the latest version of your browser.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is there a file size limit?</div>
+                    <div class="faq-answer">
+                        <p>The practical limit depends on your device's memory and processing power. Most modern computers can handle images up to 20-30MB without issues. Very large images may cause performance problems or browser crashes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section" id="privacy">
+                <h2>Privacy Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Are my images uploaded to your servers?</div>
+                    <div class="faq-answer">
+                        <p>No. Image Compressor Pro processes all images directly in your browser. Your images never leave your computer and are never uploaded to any server, ensuring complete privacy.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you store any of my image data?</div>
+                    <div class="faq-answer">
+                        <p>We do not store or have access to your original images or the compressed versions. The only data we might collect is anonymous usage statistics about which features are used most often (without any image content).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Does the tool remove EXIF data from images?</div>
+                    <div class="faq-answer">
+                        <p>Yes, by default our compression process removes all EXIF metadata (including location data, camera information, etc.) from your images to protect your privacy.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section" id="usage">
+                <h2>Usage Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I get the best compression results?</div>
+                    <div class="faq-answer">
+                        <p>For photos, use JPEG format with quality around 70-80%. For graphics with transparency, use PNG. WebP generally provides the best compression but has less browser support. Experiment with different settings to find the best balance between quality and file size for your needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I compress multiple images at once?</div>
+                    <div class="faq-answer">
+                        <p>Yes, you can select multiple files or drag and drop a folder of images (in most browsers) to process them all at once. Each image will be compressed individually.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Why should I compress my images?</div>
+                    <div class="faq-answer">
+                        <p>Compressed images load faster on websites, use less bandwidth, and improve user experience. They can also help with SEO as page speed is a ranking factor for search engines.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-prompt">
+                <h3>Didn't find your answer?</h3>
+                <p>If you have any other questions, feel free to contact our support team.</p>
+                <a href="/contact" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Image Compressor Pro</h3>
+                <p>Free online tool to compress your images while maintaining quality. All processing happens in your browser.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/How-It-Works.html">How It Works</a></li>
+                    <li><a href="/privacy.html">Privacy</a></li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        <div class="container copyright">
+            <p>&copy; <span id="year"></span> Image Compressor Pro. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+                
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+        
+        // Simple category filtering
+        document.querySelectorAll('.faq-category').forEach(category => {
+            category.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = category.getAttribute('href').substring(1);
+                
+                // Update active category
+                document.querySelectorAll('.faq-category').forEach(cat => {
+                    cat.classList.remove('active');
+                });
+                category.classList.add('active');
+                
+                // Scroll to section
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

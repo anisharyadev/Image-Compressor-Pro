@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how Image Compressor Pro works to reduce your image file sizes while maintaining quality. Our step-by-step guide explains the compression process.">
+    <meta name="keywords" content="image compression, how image compressor works, reduce image size, optimize images, image optimization process">
+    <meta name="author" content="Image Compressor Pro">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="How Image Compressor Pro Works | Free Online Image Compression">
+    <meta property="og:description" content="Learn how our tool compresses your images while maintaining quality. Perfect for websites and social media.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/how-it-works">
+    
+    <title>How Image Compressor Pro Works | Free Online Image Compression Tool</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com/how-it-works">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    
+    
+    <style>
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --accent-color: #ea4335;
+            --light-gray: #f5f5f5;
+            --dark-gray: #333;
+            --medium-gray: #757575;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--medium-gray);
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .ad-banner {
+            background-color: white;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: var(--shadow);
+        }
+        
+        .content-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin: 30px 0 15px;
+            color: var(--dark-gray);
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: var(--medium-gray);
+        }
+        
+        ol, ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            color: var(--medium-gray);
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .feature-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            background-color: var(--light-gray);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .feature-icon {
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .feature-title {
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: var(--dark-gray);
+        }
+        
+        .image-placeholder {
+            background-color: var(--light-gray);
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: var(--medium-gray);
+        }
+        
+        .cta-box {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+            color: white;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .cta-box h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background-color: var(--dark-gray);
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .step {
+                flex-direction: column;
+            }
+            
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .feature-card {
+                min-width: 100%;
+            }
+            
+            .cta-box {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">Image <span>Compressor</span> Pro</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    
+                    <li><a href="/privacy.html">Privacy</a></li>
+                    <li><a href="/terms.html">T&C</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="hero">
+            <h1>How Image Compressor Pro Works</h1>
+            <p>Learn how our tool reduces image file sizes while maintaining visual quality for faster websites and better performance.</p>
+        </section>
+        
+        
+        
+        
+        <section class="content-section">
+            <h2>Our Image Compression Process</h2>
+            <p>Image Compressor Pro uses advanced algorithms to reduce your image file sizes without noticeable loss in quality. Here's how it works:</p>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Upload Your Images</h3>
+                    <p>Simply drag and drop your images onto our tool or click to browse your files. We support JPG, PNG, and WebP formats.</p>
+                    
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Adjust Compression Settings</h3>
+                    <p>Customize how your images are compressed:</p>
+                    <ul>
+                        <li><strong>Quality Level:</strong> Choose between 10% (maximum compression) to 95% (minimum compression)</li>
+                        <li><strong>Output Format:</strong> Keep original format or convert to JPG, PNG, or WebP</li>
+                        <li><strong>Resize Options:</strong> Maintain original dimensions or resize to standard or custom sizes</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Advanced Compression Algorithms</h3>
+                    <p>Our tool processes your images using these techniques:</p>
+                    <ol>
+                        <li><strong>Color Space Optimization:</strong> Reduces color data while maintaining visual fidelity</li>
+                        <li><strong>Quantization:</strong> Groups similar colors together to reduce file size</li>
+                        <li><strong>Metadata Stripping:</strong> Removes unnecessary EXIF data and comments</li>
+                        <li><strong>Smart Resampling:</strong> Maintains sharpness when resizing images</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Download Optimized Images</h3>
+                    <p>After processing, you'll see a side-by-side comparison of your original and compressed images with detailed statistics about the file size reduction. Download individual images or all at once.</p>
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <section class="content-section">
+            <h2>Key Features of Our Image Compressor</h2>
+            
+            <div class="feature-box">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p>Compress images in seconds with our browser-based processing that requires no server upload.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Privacy Focused</h3>
+                    <p>Your images never leave your browser. All processing happens locally on your device.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Mobile Optimized</h3>
+                    <p>Works perfectly on all devices, from desktop computers to smartphones and tablets.</p>
+                </div>
+            </div>
+            
+            <div class="feature-box">
+                <div class="feature-card">
+                    <div class="feature-icon">🖼️</div>
+                    <h3 class="feature-title">Multiple Formats</h3>
+                    <p>Supports JPG, PNG, and WebP formats with automatic format conversion options.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Detailed Analytics</h3>
+                    <p>See exactly how much you've reduced file sizes with before-and-after comparisons.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">Quality Control</h3>
+                    <p>Adjustable compression levels let you balance quality and file size perfectly.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>Technical Details</h2>
+            <p>Our image compression tool uses the following technologies and techniques:</p>
+            
+            <h3>For JPEG Images</h3>
+            <ul>
+                <li>Discrete Cosine Transform (DCT) coefficient optimization</li>
+                <li>Chrominance downsampling (4:2:0)</li>
+                <li>Quantization table optimization</li>
+                <li>Huffman coding efficiency improvements</li>
+            </ul>
+            
+            <h3>For PNG Images</h3>
+            <ul>
+                <li>Optimal filter selection for each scanline</li>
+                <li>Color palette reduction (when applicable)</li>
+                <li>zlib compression level optimization</li>
+                <li>Alpha channel optimization</li>
+            </ul>
+            
+            <h3>For WebP Images</h3>
+            <ul>
+                <li>Predictive coding optimization</li>
+                <li>Entropy coding improvements</li>
+                <li>Segment-based quantization</li>
+                <li>Filter strength adjustment</li>
+            </ul>
+        </section>
+        
+        <div class="cta-box">
+            <h2>Ready to Compress Your Images?</h2>
+            <p>Start optimizing your images today for faster websites and better performance.</p>
+            <a href="/" class="btn">Try Image Compressor Pro Now</a>
+        </div>
+        
+        
+    </main>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Image Compressor Pro</h3>
+                <p>Free online tool to compress your images while maintaining quality. Perfect for websites, social media, and email.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    
+                    <li><a href="/privacy.html">Privacy</a></li>
+                    <li><a href="/terms.html">T&C</a></li>
+                    <li><a href="/faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="container copyright">
+            <p>&copy; <span id="year"></span> Image Compressor Pro. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
