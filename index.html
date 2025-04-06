@@ -22,7 +22,37 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+
+   <script>
+        //Prevent right click
+        document.oncontextmenu = () => {
+            
+            return false
+        }
+        document.onkeydown = e => {
+            //Prevent F12 key
+            if (e.key == "F12") {
+                alert("Don't try to inspect element")
+                return false
+            }
+            //Prevent showing page source by Ctrl + U
+            if (e.ctrlKey && e.key == "u") {
+                return false
+            }
+            //Prevent selecting anything from the page
+            if (e.ctrlKey && e.key == "a") {
+                return false
+            }
+            //Prevent copying anything from the page
+            if (e.ctrlKey && e.key == "c") {
+                return false
+            }
+            //Prevent paste anything from other source
+            if (e.ctrlKey && e.key == "v") {
+                return false
+            }
+        }
+    </script>
     
     
     <style>
